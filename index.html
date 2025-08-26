@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Qlik Embed Example</title>
+    <script
+     crossorigin="anonymous"
+     type="application/javascript"
+     src="https://cdn.jsdelivr.net/npm/@qlik/embed-web-components@1/dist/index.min.js"
+     data-host="https://keyruspt.qlikcloud.com"
+     data-client-id="f6706182174fc70842b6161db71246ba"
+     data-redirect-uri="https://jgoncalves13.github.io/qlik-embed-demo/oauth-callback.html"
+     data-access-token-storage="session"
+></script>
+    <style>
+      body { font-family: sans-serif; margin: 0; padding: 0; }
+      .viz, .classic-app {
+        border: 1px solid #bbb; margin: 16px; padding: 16px;
+        border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Embed Qlik Cloud</h1>
+
+    //<h2>Un objeto específico</h2>
+    //<div class="viz">
+    //  <qlik-embed
+     //   ui="analytics/chart"
+    //    app-id="<APP_ID>"
+    //    object-id="<OBJECT_ID>">
+   //   </qlik-embed>
+   // </div>
+
+    <h2>La aplicación completa</h2>
+    <div class="classic-app">
+      <qlik-embed
+        ui="classic/app"
+        app-id="40de9651-2036-42be-a6e0-86ec38362ad0"
+        sheet-id="XwLsPUk">
+      </qlik-embed>
+    </div>
+  </body>
+</html>
